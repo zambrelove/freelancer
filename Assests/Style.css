@@ -1,0 +1,690 @@
+/* ================================= ***** Freelancer Webpage Stylesheet Start Here ***** ==================================== */
+    /* --- Globle Css --- */
+        *{
+            padding: 0px; margin: 0px;
+            box-sizing: border-box;
+            list-style: none; text-decoration: none; border: none; outline: 0px transparent;
+        }      
+    /* --- Globle Css --- */
+
+    /* --- Typographic Declartion --- */
+        @font-face{
+            font-family: 'Poppins';
+            font-weight: 400;
+            src: url('/Assests/Fonts/Poppins/Poppins-Regular.ttf');
+        }
+        @font-face{
+            font-family: 'Poppins';
+            font-weight: 700;
+            src: url('/Assests/Fonts/Poppins/Poppins-Bold.ttf');
+        }
+    /* --- Typographic Declartion --- */
+
+    /* --- Color, Font Variables Declartion --- */
+        :root{
+            --Theme-Primery-color: #192d35;
+            --Theme-Secondry-color: #1cbbb4;
+            --Theme-Turturry: #ff4f5a;
+            --Section-Sub-Text: #1a2e35;
+            --Section-Heading: #1c1d1d;
+            --Footer-sub-content: #c9c7c7;
+            --botom-border: #ffffffa4;
+            --White: #ffffff;
+            --Black: #000000;
+
+            /* Font Variable */
+            --Poppins-Font: 'Poppins';
+        }
+    /* --- Color, Font Variables Declartion --- */
+
+    /* --- Comman Css --- */
+        html, body{
+            scroll-behavior: smooth;
+            font-family: var(--Poppins-Font);
+            font-weight: 400;   
+        }
+        
+        a {
+            color: var(--Black);
+            display: inline;
+            font-family: var(--Poppins-Font);
+        }
+
+        img {
+            width: 100%; height: 100%;
+            object-position: center center;
+            object-fit: contain;
+        }
+    /* --- Comman Css --- */
+
+    /* --- Custom Css --- */
+        ::selection{
+            color: var(--White);
+            background-color: var(--Theme-Secondry-color);
+        }
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #9390905d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #1a2e35;
+        }
+
+        .Container{
+            width: 100%;
+            padding: 10px;
+        }
+        .Section-Spacing{
+            padding: 30px 10px;
+        }
+        
+        .d-flex{
+            display: flex;
+        }
+
+        .Section-Heading{
+            font-size: 22px;
+            font-weight: 700;
+            font-family: var(--Poppins-Font);
+            color: var(--Section-Heading);
+            text-transform: uppercase;
+        }
+        .Section-Sub-Text{
+            font-size: 14px;
+            font-weight: 400;
+            font-family: var(--Poppins-Font);
+            color: var(--Section-Sub-Text);
+        }
+
+        .Btn {
+            padding: 9px 25px;
+            margin-right: 10px;
+            display: inline-block;
+            text-transform: capitalize;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: var(--Poppins_Font);
+            transition: background-color 0.2s;
+        }
+        .Btn:hover{
+            box-shadow: -3px 0px 35px rgba(28, 28, 28, 0.09);
+        }
+        .Btn-Primary {
+            color: var(--White);
+            background-color: var(--Theme-Turturry);
+        }
+        .Btn-Primary:hover{
+            background-color: var(--Theme-Secondry-color);
+        }
+        .Btn-Secoundry{
+            color: var(--White);
+            background-color: var(--Section-Sub-Text);
+            
+        }
+        .Btn-Secoundry:hover{
+            background-color: var(--Theme-Secondry-color);
+        }
+        .Btn-extra-lr-space{
+            padding: 9px 50px;
+        }
+
+        .Go-Top{
+            font-size: 30px;
+            position: fixed; bottom: 30px; right: 30px;
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            color: var(--Theme-Primery-color); background-color: var(--Theme-Turturry);
+            display: flex; align-items: center; justify-content: center;
+            transition: all 5s, color 0s;
+            cursor: pointer;
+        }
+        .Go-Top:hover {
+            color: var(--Theme-Secondry-color);
+        }
+        .single-item .Hero-slide{
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            color: var(--White);
+        }
+        .single-item, .single-item .slick-slide{
+            height: 100vh;
+        }
+        .Hero-slide-tittle{
+            font-size: 32px;
+            text-transform: uppercase;
+            font-family: var(--Poppins-Font);
+        }
+        .Hero-slide-sub-tittle{
+            font-size: 16px;
+            font-family: var(--Poppins-Font);
+            margin: 15px 0px 30px;
+        }
+        .white-btn{
+            color: var(--Theme-Primery-color);
+            background-color: var(--White);
+        }
+        .Slider-tittle-break{
+            display: none;
+        }
+        .hero-img{
+            width: 50%;
+        }
+        /* Testimmonial slide */
+    /* --- Custom Css ---- */
+/* ========================================================================================================================= */
+
+
+    /* ====================================== *** Page layouting Css End Here *** ====================================== */
+        /* --- Hero Section Start Here --- */
+            header{
+                min-height: 100vh;
+                background-image: url('/Assests/Images/herobg.png');
+                background-position: left center;
+                position: relative;
+                overflow: hidden;
+                background-attachment: fixed;
+            }
+            nav{
+                padding: 15px 10px;
+                justify-content: space-between;
+            }
+            .Logo-img{
+                width: 80%;
+            }
+            .Desktop-Navigation{
+                display: none;
+                gap: 20px;
+            }
+            .Top_Right-Nav{
+                gap: 15px;
+                padding-top: 7px;
+            }
+            .Top_Right-Nav li a:hover{
+                color: var(--Theme-Secondry-color);
+            }
+            .Sidebar-Pannel{
+                position: absolute;
+                top: 0; right: -105%;
+                width: 100vw; height: 100vh;
+                background-color: var(--Section-Heading);
+                transition: right 0.4s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .Active-Sidebar{
+                right: 0;
+            }
+            .Sidebar-Pannel a{
+                font-size: 32px;
+                margin-bottom: 30px;
+                display: inline-block;
+            }
+            .fa-xmark{
+                position: absolute; top: 35px; right: 53px;
+                cursor: pointer;
+                color: var(--White);
+                font-size: 28px;
+            }
+
+            .Desktop-Navigation a,
+            .Sidebar-Pannel a,
+            .Top_Right-Nav a,
+            .Useful-link ul li a,
+            .Footer-Contact-link ul li a{
+                font-family: var(--Poppins-Font);
+                text-transform: capitalize;
+                color: var(--White);
+                font-weight: 400;
+            }
+            .Desktop-Navigation li a:hover,
+            .Sidebar-Pannel ul li a:hover,
+            .Useful-link ul li a:hover,
+            .Footer-Contact-link ul li a:hover{
+                color: var(--Theme-Secondry-color);
+            }
+        /* --- Hero Section End Here --- */
+
+        /* --- Experinced Section Start Here --- */
+            .Experinced-Section{
+                flex-direction: column;
+            }
+            .Experinced-Content{
+                padding: 10px;
+            }
+            .Experinced-Content .Section-Sub-Text{
+                margin: 10px 0px 25px 0px;
+            }
+        /* --- Experinced Section Start Here --- */
+
+        /* --- Category Section Start Here --- */
+            .Category{
+                background-color: var(--Theme-Secondry-color);
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+            .Category .Section-Heading{
+                color: var(--White);
+                position: relative;
+                display: inline-block;
+            }
+            .Category .Section-Heading::before{
+                content: '';
+                width: 90%; height: 1.01px;
+                margin: 0px auto;
+                position: absolute;
+                bottom: 5px; left: 0; right: 0;
+                background-color: var(--botom-border);
+            }
+            .Category-card-Wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 20px;
+                padding-top: 30px;
+            }
+            .Category-card-Wrapper .Category-card{
+                min-width: 120px;
+                padding: 5px;
+                color: var(--White);
+            }
+            .Category-card .cate-icon{
+                font-size: 34px;
+            }
+            .Category-card .Category-Card-Tittle{
+                font-size: 17px;
+                margin-top: 10px;
+            }
+        /* --- Category Section End Here --- */
+        
+        /* --- About Section --- */
+            .About-Section{
+                flex-direction: column;
+                text-align: center;
+            }
+            .About-Content .Section-Sub-Text{
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        /* --- About Section --- */
+
+        /* --- Work Section Start Here --- */
+            .Work-Content-Wrapper{
+                display: flex;
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            .Work-Card-Wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+            .Work-Card > div{
+                padding: 5px;
+            }
+            .Work-Card{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 10px;
+            }
+            .Theme-Text{
+                font-size: 14px;
+                font-weight: 700;
+                font-family: var(--Poppins-Font);
+                color: var(--Theme-Turturry);
+            }
+            .Work-Card-tittle{
+                font-size: 18px;
+                font-weight: 700;
+                font-family: var(--Poppins-Font);
+                color: var(--Section-Sub-Text);
+                text-transform: capitalize;
+            }
+            .Work-card-img{
+                width: 50%;
+            }
+            .Card-icon{
+                width: 60px; height: 60px;
+                border-radius: 50%;
+                display: flex; align-items: center; justify-content: center;
+                background-color: #192d35;
+            }
+            .Work-Card:hover .Card-icon{
+                background-color: #1cbbb4;
+            }
+        /* --- Work Section Start Here --- */
+
+        /* Tesimonial Slider */
+            
+        /* Testimonial Sldier */
+
+        /* --- Footer --- */
+            footer{
+                background-color: var(--Theme-Primery-color);
+                padding-top: 30px;
+            }
+
+            /* Footer Navbar */
+            .Footer-Navbar{
+                align-items: start;
+                justify-content: space-between;
+            }
+            .footer-logo{
+                width: 50%;
+            }
+            .Footer-Social_Media ul{
+                gap: 10px;
+            }
+
+            /* Middel link */
+            .Useful-link ul li{
+                margin-bottom: 5px;
+            }
+            .Footer-Social_Media ul li a{
+                font-size: 18px;
+                color: var(--White);
+            }
+            .Footer-Social_Media ul li a:hover{
+                color: var(--Theme-Secondry-color);
+            }
+            .Footer-Other-link-Wrapper{
+                flex-direction: column;
+                gap: 20px;
+            }
+            .Footer-Tittle{
+                font-size: 18px;
+                color: var(--White);
+                font-family: var(--Poppins-Font);
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .Information p, .Offices p{
+                font-size: 14px;
+                font-weight: 400;
+                font-family: var(--Poppins-Font);
+                color: var(--Footer-sub-content);
+            }
+            .News-letter input{
+                width: 100%;
+                padding: 10px;
+                font-size: 14px;
+                color: var(--Theme-Primery-color);
+                font-family: var(--Poppins-Font);
+                margin-bottom: 10px;
+            }
+            .News-letter button{
+                padding: 10px 40px;
+                border: 1px solid var(--White);
+            }
+
+            /* copyright */
+            .copyright{
+                background-color: var(--White);
+                padding: 10px;
+            }
+            .copyright p{
+                font-size: 14px;
+                font-family: var(--Poppins-Font);
+                text-align: center;
+            }
+            .Footer-Contact-link ul{
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 30px 0 15px 0;
+                gap: 15px;
+            }
+            .Footer-Contact-link ul li a{
+                font-size: 14px;
+            }
+            .fa-location-dot, .fa-envelope, .fa-phone{
+                margin-right: 10px;
+                font-size: 18px;
+            }
+        /* Footer */
+       
+    /* ====================================== *** Page layouting Css End Here *** ====================================== */
+
+
+    /* ======================= ***** Media Quries Start Here ***** ======================= */
+
+        @media screen and (min-width: 768px) {
+            /* Comman Css */
+                .Container{
+                    width: 90vw;
+                    margin: 0 auto;
+                }
+                .Section-Spacing{
+                    padding: 40px 10px;
+                }
+                .Section-Heading{
+                    font-size: 24px;
+                }
+                .Section-Sub-Text{
+                    font-size: 14px;
+                }
+                .Btn{
+                    padding: 9px 30px;
+                }
+                .Btn-extra-lr-space{
+                    padding: 9px 55px;
+                }
+                .single-item .Hero-slide{
+                    flex-direction: row;
+                    align-items: start;
+                    padding-top: 150px;
+                    gap: 40px;
+                }
+                .Hero-slide-img-wrapper{
+                    width: 80%;
+                }
+            /* Comman Css */
+
+            /* --- Hero Section Start Here --- */
+                header{
+                    background-position: 55% center;
+                }
+                nav{
+                    
+                    padding: 25px 50px;
+                    justify-content: space-between;
+                }
+                .Logo {
+                    display: flex;
+                    align-items: start;
+                }
+                .Desktop-Navigation{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                    padding-top: 5px;
+                    margin-left: 20px;
+                }
+                .Top_Right-Nav{
+                    gap: 15px;
+                }
+                .Top_Right-Nav li a:hover{
+                    color: var(--Theme-Primery-color);
+                }
+            /* --- Hero Section Start Here --- */
+
+            /* --- Experinced Section Start Here --- */
+                .Experinced-Section{
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 0px;
+                }
+                .Experinced-Content .Section-Sub-Text{
+                    margin: 10px 0px 35px 0px;
+                }
+            /* --- Experinced Section Start Here --- */
+
+            /* --- Category Section Start Here --- */
+                .Category-card-Wrapper{
+                    gap: 40px;
+                    padding-top: 45px;
+                }
+                .Category-card-Wrapper .Category-card{
+                    min-width: 160px;
+                }
+            /* --- Category Section End Here --- */
+
+            /* --- About Section Start --- */
+                .About-Banner{
+                    justify-content: center;
+                }
+                .About-Banner img{
+                    width: 50%;
+                    margin: 0px auto;
+                }
+            /* --- About Section End --- */
+
+            /* --- Work Section Start --- */
+                .Work-Content-Wrapper{
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .Work-Banner{
+                    width: 50%;
+                }
+                .Theme-Text{
+                    font-size: 16px;
+                }
+                .Work-Card-tittle{
+                    font-size: 20px;
+                }
+                .Card-icon{
+                    width: 70px; height: 70px;
+                }
+            /* --- Work Section End --- */
+
+            /* Footer Section */
+                .Footer-Social_Media ul{
+                    gap: 15px;
+                }
+                .Footer-Social_Media ul li a{
+                    font-size: 20px;
+                }
+                .footer-logo{
+                    width: 90%;
+                }
+                .Footer-Other-link-Wrapper{
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                .Footer-Tittle{
+                    margin-bottom: 10px;
+                }
+                .Information, .Offices{
+                    width: 30%;
+                }
+                .copy-break{
+                    display: none;
+                }
+                .Footer-Other-link-Wrapper{
+                    padding: 20px 0px;
+                }
+                .Footer-Contact-link ul{
+                    justify-content: space-evenly;
+                    padding: 20px 0;
+                }
+                .copyright{
+                    padding: 15px;
+                }
+            /* Footer Section */
+        }
+
+        @media screen and (min-width: 1024px) {
+            /* Comman Css */
+                .Container{
+                    width: 80vw;
+                }
+                .Section-Spacing{
+                    padding: 70px 10px;
+                }
+                .Section-Sub-Text{
+                    font-size: 16px;
+                }
+                .Section-Heading{
+                    font-size: 34px;
+                }
+                
+            /* Comman Css */
+
+            /* --- Hero Section Start Here --- */
+                header{
+                    background-position: 60% center;
+                }
+                
+                .Desktop-Navigation{
+                    gap: 30px;
+                    margin-left: 50px;
+                }
+            /* --- Hero Section Start Here --- */
+
+            /* --- Experinced Section  --- */
+                .Experinced-Section {
+                    gap: 0px;
+                }
+                .Experinced-Content{
+                    width: 65%;
+                }
+                .Experinced-Content .Section-Sub-Text{
+                    margin-bottom: 40px;
+                }
+            /* --- Experinced Section --- */
+
+            /* --- Category Section Start Here --- */
+                .Category-card-Wrapper .Category-card{
+                    min-width: 180px;
+                }
+            /* --- Category Section End Here --- */
+        }
+
+        @media screen and (min-width: 1280px) {
+            /* Comman Css */
+                
+                .Section-Heading{
+                    font-size: 40px;
+                }
+                .Slider-tittle-break{
+                    display: block;
+                }
+                .Hero-slide-img-wrapper{
+                    width: 50%;
+                }
+            /* Comman Css */
+
+            /* --- Category Section Start Here --- */
+                .Category-card-Wrapper .Category-card{
+                    min-width: 280px;
+                }
+            /* --- Category Section End Here --- */
+
+            /* --- Footer Section --- */
+                .News-letter input{
+                    width: 70%;
+                }
+                .Information, .Offices{
+                    width: 13%;
+                }
+                .Footer-Social_Media {
+                    width: 30%;
+                }
+                .Footer-Social_Media ul{
+                    gap: 25px;
+                }
+                .Footer-Other-link-Wrapper{
+                    padding: 35px 0px;
+                }
+                /* --- Footer Section --- */
+                
+        }
+    /* ======================= ***** Media Quries Start Here ***** ======================= */
+
+/* ================================= ***** Freelancer Webpage Stylesheet End Here ***** ==================================== */

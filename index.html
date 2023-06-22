@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spinner Freelancer</title>
+    <link rel="shortcut icon" href="Assests/Images/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Slick slider Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+
+    <!-- Fontawsome Link -->
+      <link rel="stylesheet" href="Assests/fontawesome-free-6.2.1-web/css/all.min.css">  
+
+    <!-- CSS File Link-->
+        <link rel="stylesheet" href="Assests/Style.css">
+</head>
+<body>
+    <!-- Freelancer Website Template Layouting Start Here -->
+        
+        <!-- Hero Section -->
+            <header id="Home">
+                <div class="Hero-content">
+                    <nav class="d-flex">
+                        <div class="Logo">
+                            <a href="index.html" title="Home link">
+                                <img src="Assests/Images/logo.png" alt="Brand Logo" class="Logo-img" />
+                            </a>
+
+                            <ul class="Desktop-Navigation d-flex">
+                                <li><a href="#home">home</a></li>
+                                <li><a href="#Category">Category</a></li>
+                                <li><a href="#About">about</a></li>
+                                <li><a href="#Work">work</a></li>
+                            </ul>
+                        </div>
+                        
+                        <ul class="Top_Right-Nav d-flex">
+                            <li><a href="#" title="link">login</a></li>
+                            <li>
+                                <a href="#" title="link">
+                                    <i class="fa fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="link" onclick="OpenSidebar()">
+                                    <i class="fa fa-bars-staggered"></i>
+                                </a>
+
+                                <div class="Sidebar-Pannel" id="Sidebar">
+                                    <i class="fa fa-xmark" onclick="CloseSidebar()"></i>
+                                    <ul>
+                                        <li><a href="#home" onclick="CloseSidebar()">home</a></li>
+                                        <li><a href="#Work" onclick="CloseSidebar()">work</a></li>
+                                        <li><a href="#About" onclick="CloseSidebar()">about</a></li>
+                                        <li><a href="#Category" onclick="CloseSidebar()">Category</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="Container single-item">
+                        <div class="Hero-slide">
+                            <div>
+                                <h1 class="Hero-slide-tittle">you can <br class="Slider-tittle-break"> hire freelancer<br class="Slider-tittle-break"> here</h1>
+                                <p class="Hero-slide-sub-tittle">It is a long established fact that a reader will be distracted by
+                                    the readable content of a page</p>
+                                <a href="#" class="Btn Btn-Primary">read  more</a> 
+                                <a href="#" class="Btn Btn-Primary white-btn">get a quote</a>
+                            </div>
+                            <div class="Hero-slide-img-wrapper">
+                                <img src="Assests/Images/hero-slide.png" alt="">
+                            </div>
+                        </div>
+                        <div class="Hero-slide">
+                            <div>
+                                <h1 class="Hero-slide-tittle">you can <br class="Slider-tittle-break"> hire freelancer<br class="Slider-tittle-break"> here</h1>
+                                <p class="Hero-slide-sub-tittle">It is a long established fact that a reader will be distracted by
+                                    the readable content of a page</p>
+                                <a href="#" class="Btn Btn-Primary">read  more</a> 
+                                <a href="#" class="Btn Btn-Primary white-btn">get a quote</a>
+                            </div>
+                            <div class="Hero-slide-img-wrapper">
+                                <img src="Assests/Images/hero-slide.png" alt="">
+                            </div>
+                        </div>
+                        <div class="Hero-slide">
+                            <div>
+                                <h1 class="Hero-slide-tittle">you can <br class="Slider-tittle-break"> hire freelancer<br class="Slider-tittle-break"> here</h1>
+                                <p class="Hero-slide-sub-tittle">It is a long established fact that a reader will be distracted by
+                                    the readable content of a page</p>
+                                <a href="#" class="Btn Btn-Primary">read  more</a> 
+                                <a href="#" class="Btn Btn-Primary white-btn">get a quote</a>
+                            </div>
+                            <div class="Hero-slide-img-wrapper">
+                                <img src="Assests/Images/hero-slide.png" alt="">
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </header>
+        <!-- Hero Section -->
+    
+        <!-- Experinced Section -->
+            <section class="Container Experinced-Section d-flex Section-Spacing" id="Wok">
+                <div class="Experinced-Banner">
+                    <img src="Assests/Images/experience.png" alt="Experinced-Banner" />
+                </div>
+                <div class="Experinced-Content">
+                    <h2 class="Section-Heading">Best Experinced Freelancer Here</h2>
+                    <p class="Section-Sub-Text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
+                    <a href="#" class="Btn Btn-Primary">read more</a>
+                    <a href="#" class="Btn Btn-Secoundry Btn-extra-lr-space">hire</a>
+                </div>
+            </section>
+        <!-- Experinced Section -->
+
+        <!-- Category Section  Jumbotron -->
+            <section class="Category" id="Category">
+                <div class="Container">
+                    <h2 class="Section-Heading">Category</h2>
+
+                    <div class="Category-card-Wrapper">
+                        <div class="Category-card">
+                            <i class="fa-solid fa-icons cate-icon"></i>
+                            <h4 class="Category-Card-Tittle">design <br class="Category-tittle-break">& arts</h4>
+                        </div>
+                        <div class="Category-card">
+                            <i class="fas fa-laptop-code cate-icon"></i>
+                            <h4 class="Category-Card-Tittle">web <br class="Category-tittle-break"> development</h4>
+                        </div>
+                        <div class="Category-card">
+                            <i class="fas fa-laptop cate-icon"></i>
+                            <h4 class="Category-Card-Tittle">seo <br class="Category-tittle-break"> markting</h4>
+                        </div>
+                        <div class="Category-card">
+                            <i class="fas fa-video cate-icon"></i>
+                            <h4 class="Category-Card-Tittle">video <br class="Category-tittle-break"> editing</h4>
+                        </div>
+                        <div class="Category-card">
+                            <i class="fas fa-pen-ruler cate-icon"></i>
+                            <h4 class="Category-Card-Tittle">logo <br class="Category-tittle-break"> design</h4>
+                        </div>
+                        <div class="Category-card">
+                            <i class="fa fa-gas-pump cate-icon"></i>
+                            <h4 class="Category-Card-Tittle">logo <br class="Category-tittle-break"> design</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Category Section Jumbotron -->
+
+        <!-- About Section -->
+            <section class="Container About-Section Section-Spacing d-flex" id="About">
+                <div class="About-Banner d-flex">
+                    <img src="Assests/Images/about.png" alt="About Spinner Banner" />
+                </div>
+                <div class="About-Content">
+                    <h2 class="Section-Heading">about spering company</h2>
+                    <p class="Section-Sub-Text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If youThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you</p>
+                    <a href="#" class="Btn Btn-Primary" title="Btn">read more</a>
+                </div>
+            </section>
+        <!-- About Section -->
+
+        <!-- Work Section -->
+            <section class="Container Work-Section Section-Spacing" id="Work">
+                <h2 class="Section-Heading">work freelancer has done</h2>
+                
+                <div class="Work-Content-Wrapper ">
+                    <div class="Work-Card-Wrapper">
+                        <div class="Work-Card">
+                            <div class="Card-icon">
+                                <img src="Assests/Images/Work/icon-1.png" alt="icon image" class="Work-card-img">
+                            </div>
+                            <div class="Card-Content">
+                                <p class="Theme-Text">$250 million</p>
+                                <h4 class="Work-Card-tittle">paid to freelancers</h4>
+                            </div>
+                        </div>
+                        <div class="Work-Card">
+                            <div class="Card-icon">
+                                <img src="Assests/Images/Work/icon-2.png" alt="icon image" class="Work-card-img">
+                            </div>
+                            <div class="Card-Content">
+                                <p class="Theme-Text">$2 million</p>
+                                <h4 class="Work-Card-tittle">paid invoices</h4>
+                            </div>
+                        </div>
+                        <div class="Work-Card">
+                            <div class="Card-icon">
+                                <img src="Assests/Images/Work/icon-3.png" alt="icon image" class="Work-card-img">
+                            </div>
+                            <div class="Card-Content">
+                                <p class="Theme-Text">7,00,000</p>
+                                <h4 class="Work-Card-tittle">worldwide freelancer</h4>
+                            </div>
+                        </div>
+                        <div class="Work-Card">
+                            <div class="Card-icon">
+                                <img src="Assests/Images/Work/icon-4.png" alt="icon image" class="Work-card-img">
+                            </div>
+                            <div class="Card-Content">
+                                <p class="Theme-Text">98%</p>
+                                <h4 class="Work-Card-tittle">customer satisfaction rate</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Work-Banner">
+                        <img src="Assests/Images/work.png" alt="Banner Image" />
+                    </div>
+                </div>
+            </section>
+        <!-- Work Section -->
+
+        <!-- Testimonial Slider -->
+            <!-- <div class="Container Section-Spacing Testimonial-slider">
+                <div class="Testi-slide">
+                    <h5 class="Section-Heading">Testimonial</h5>
+                    <p class="Section-Sub-Text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit officia voluptate quia quae accusamus, expedita dicta porro soluta obcaecati, odit vitae error optio! Eius, nihil fuga nesciunt dolorum debitis odio.</p>
+                </div>
+                <div class="Testi-slide">
+                    <h5 class="Section-Heading">Testimonial</h5>
+                    <p class="Section-Sub-Text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit officia voluptate quia quae accusamus, expedita dicta porro soluta obcaecati, odit vitae error optio! Eius, nihil fuga nesciunt dolorum debitis odio.</p>
+                </div>
+            </div> -->
+        <!-- Testimonial Slider -->
+
+        <!-- Footer Section -->
+            <footer>
+                <div class="Container">
+                    <!-- Footer navbar -->
+                        <div class="Footer-Navbar d-flex">
+                            <div>
+                                <a href="index.html">
+                                    <img src="/Assests/Images/logo.png" alt="footer logo" class="footer-logo" />
+                                </a>
+                            </div>
+
+                            <div class="Footer-Social_Media">
+                                <ul class="d-flex">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    <!-- Footer Middle Section -->
+                        <div class="Footer-Other-link-Wrapper d-flex">
+                        <div class="Useful-link">
+                            <h5 class="Footer-Tittle">useful link</h5>
+                            <ul>
+                                <li><a href="#home">home</a></li>
+                                <li><a href="#Work">work</a></li>
+                                <li><a href="#About">about</a></li>
+                                <li><a href="#Category">Category</a></li>
+                            </ul>
+                        </div>
+                        <div class="Offices">
+                            <h5 class="Footer-Tittle">Offices</h5>
+                            <p>Readable content of a page when looking at its layoutreadable content of a page when looking at its layout</p>
+                        </div>
+                        <div class="Information">
+                            <h5 class="Footer-Tittle">information</h5>
+                            <p>Readable content of a page when looking at its layoutreadable content of a page when looking at its layout</p>
+                        </div>
+                        <div class="News-letter">
+                            <h5 class="Footer-Tittle">News letter</h5>
+                            <form action="" method="post">
+                                <input type="email" name="email" placeholder="Email">
+                                <button type="submit" class="Btn Btn-Primary">subscribe</button>
+                            </form>
+                        </div>
+                        </div>
+
+                    <!-- Footer Contact link wrapper -->
+                        <div class="Footer-Contact-link">
+                            <ul class="d-flex">
+                                <li><a href="#"><i class="fa-solid fa-location-dot"></i>location</a></li>
+                                <li><a href="#"><i class="fa-solid fa-envelope"></i>demo@gmail.com</a></li>
+                                <li><a href="#"><i class="fa-solid fa-phone"></i>call +9876543210</a></li>
+                            </ul>
+                        </div>
+
+                    <!-- Footer copyright -->
+                        
+
+                </div>
+                <div class="copyright">
+                    <p>© 2020 All Rights Reserved. <br class="copy-break"> Design by Free Html Templates</p>
+                </div>
+            </footer>
+        <!-- Footer Section -->
+
+        <!-- Goto top -->
+            <a href="#Home" title="go to top link" class="Go-Top">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+        <!-- Goto top -->
+        
+
+        <!-- All Script Tag & Sources File Call Start Here -->
+            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+            
+            <script>
+                $('.single-item').slick({
+                    dots: false,
+                    autoplay: true,
+                    infinity: true,
+                    arrows: true,
+                });
+
+                $('.Testimonial-slider').slick({
+                    dots: false,
+                    autoplay: false,
+                    infinity: true,
+                    arrows: true,
+                });
+            </script>
+            
+            <script src="/Assests/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+            <script src="Assests/main.js"></script>
+        <!-- All Script Tag & Sources File Call End Here -->
+
+    <!-- Freelancer Website Template Layouting End Here -->
+</body>
+</html>
