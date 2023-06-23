@@ -131,9 +131,9 @@
         }
 
         .Go-Top{
-            font-size: 30px;
-            position: fixed; bottom: 30px; right: 30px;
-            width: 50px; height: 50px;
+            font-size: 18px;
+            position: fixed; bottom: 20px; right: 15px;
+            width: 30px; height: 30px;
             border-radius: 50%;
             color: var(--Theme-Primery-color); background-color: var(--Theme-Turturry);
             display: flex; align-items: center; justify-content: center;
@@ -148,9 +148,6 @@
             flex-direction: column;
             align-items: center;
             color: var(--White);
-        }
-        .single-item, .single-item .slick-slide{
-            height: 100vh;
         }
         .Hero-slide-tittle{
             font-size: 32px;
@@ -169,10 +166,31 @@
         .Slider-tittle-break{
             display: none;
         }
+        .Herro-Slide-Discrption-Break{
+            display: none;
+        }
         .hero-img{
             width: 50%;
         }
-        /* Testimmonial slide */
+        .single-item .prev-arrows, .single-item .next-arrows{
+            color: var(--White);
+            width: 30px; height: 30px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            font-size: 20px;
+        }
+        .single-item .prev-arrows{
+            background-color: var(--Theme-Turturry);
+            bottom: 0%;
+            left: 0;
+        }
+        .single-item .next-arrows{
+            background-color: var(--Theme-Secondry-color);
+            bottom: 0%;
+            left: 15%;
+        }
     /* --- Custom Css ---- */
 /* ========================================================================================================================= */
 
@@ -180,7 +198,7 @@
     /* ====================================== *** Page layouting Css End Here *** ====================================== */
         /* --- Hero Section Start Here --- */
             header{
-                min-height: 100vh;
+                height: 100vh;
                 background-image: url('/Assests/Images/herobg.png');
                 background-position: left center;
                 position: relative;
@@ -214,6 +232,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                z-index: 9999;
             }
             .Active-Sidebar{
                 right: 0;
@@ -360,7 +379,53 @@
         /* --- Work Section Start Here --- */
 
         /* Tesimonial Slider */
-            
+            .Testimonial{
+                text-align: center;
+            }
+            .Testimonial .Section-Heading{
+                font-size: 28px;
+            }
+            .Testimonial-slider{
+                background-color: var(--White);
+                filter: drop-shadow(0px -3px 35px rgba(28,28,28,0.09));
+                padding: 25px;
+                margin: 30px 0px;
+            }
+            .Testi-slide .Testimonial-Tittle{
+                font-size: 20px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+            .Testimonial-Discription{
+                font-size: 14px;
+            }
+            .Testi-slide span{
+                display: inline-block;
+                margin-top: 15px;
+            }
+            .Testimonial-slider .prev-arrows, .Testimonial-slider .next-arrows{
+                color: var(--White);
+                background-color: var(--Theme-Primery-color);
+                width: 30px; height: 30px;
+                border-radius: 50%;
+                display: flex; align-items: center; justify-content: center;
+                cursor: pointer;
+            }
+            .Testimonial-slider .prev-arrows:hover, .Testimonial-slider .next-arrows:hover{
+                background-color: var(--Theme-Secondry-color);
+            }
+            .Testimonial-slider .prev-arrows{
+                position: absolute;
+                top: 50%;
+                left: -7px;
+                transform: translateY(-50%);
+            }
+            .Testimonial-slider .next-arrows{
+                position: absolute;
+                top: 50%;
+                right: -7px;
+                transform: translateY(-50%);
+            }
         /* Testimonial Sldier */
 
         /* --- Footer --- */
@@ -368,7 +433,6 @@
                 background-color: var(--Theme-Primery-color);
                 padding-top: 30px;
             }
-
             /* Footer Navbar */
             .Footer-Navbar{
                 align-items: start;
@@ -395,7 +459,9 @@
             .Footer-Other-link-Wrapper{
                 flex-direction: column;
                 gap: 20px;
+                padding: 10px 0px;
             }
+           
             .Footer-Tittle{
                 font-size: 18px;
                 color: var(--White);
@@ -475,8 +541,9 @@
                 }
                 .single-item .Hero-slide{
                     flex-direction: row;
-                    align-items: start;
-                    padding-top: 150px;
+                    align-items: top;
+                    justify-content: space-between;
+                    padding-top: 50px;
                     gap: 40px;
                 }
                 .Hero-slide-img-wrapper{
@@ -560,7 +627,31 @@
                 .Card-icon{
                     width: 70px; height: 70px;
                 }
+                .work-card-tittle-break{
+                    display: block;
+                }
             /* --- Work Section End --- */
+
+            /* --- Testimonial Slider --- */
+                .Testimonial-slider.slick-slider{
+                    width: 70%;
+                    padding: 35px;
+                    margin: 30px auto;
+                }
+                .single-item .prev-arrows,
+                .single-item .next-arrows,
+                .Testimonial-slider .prev-arrows,
+                .Testimonial-slider .next-arrows{
+                    width: 40px; height: 40px;
+                }
+                .Testimonial-slider .prev-arrows{
+                    left: -15px;
+                }
+                .Testimonial-slider .next-arrows{
+                    right: -15px;
+                }
+            /* --- Testimonial Slider --- */
+
 
             /* Footer Section */
                 .Footer-Social_Media ul{
@@ -585,9 +676,6 @@
                 }
                 .copy-break{
                     display: none;
-                }
-                .Footer-Other-link-Wrapper{
-                    padding: 20px 0px;
                 }
                 .Footer-Contact-link ul{
                     justify-content: space-evenly;
@@ -620,11 +708,12 @@
                 header{
                     background-position: 60% center;
                 }
-                
                 .Desktop-Navigation{
+                
                     gap: 30px;
                     margin-left: 50px;
                 }
+                .Hero-slide-img-wrapper
             /* --- Hero Section Start Here --- */
 
             /* --- Experinced Section  --- */
@@ -644,6 +733,23 @@
                     min-width: 180px;
                 }
             /* --- Category Section End Here --- */
+
+            /* --- Testimonial Slider --- */
+                .Testimonial-slider.slick-slider{
+                    width: 50%;
+                    padding: 35px 40px;
+                    margin: 40px auto;
+                }
+                .Testi-slide .Testimonial-Tittle{
+                    margin-bottom: 10px;
+                }
+                .Testimonial-slider .prev-arrows{
+                    left: -20px;
+                }
+                .Testimonial-slider .next-arrows{
+                    right: -20px;
+                }
+            /* --- Testimonial Slider --- */
         }
 
         @media screen and (min-width: 1280px) {
@@ -652,19 +758,40 @@
                 .Section-Heading{
                     font-size: 40px;
                 }
+                .Go-Top{
+                    width: 50px; height: 50px;
+                }
+            /* Comman Css */
+
+            /* --- Hero Section --- */
+                .Hero-slide-img-wrapper{
+                    width: 45%;
+                }
+                .Herro-Slide-Discrption-Break{
+                    display: block;
+                }
                 .Slider-tittle-break{
                     display: block;
                 }
-                .Hero-slide-img-wrapper{
-                    width: 50%;
-                }
-            /* Comman Css */
+            /* --- Hero Section ---- */
 
             /* --- Category Section Start Here --- */
                 .Category-card-Wrapper .Category-card{
                     min-width: 280px;
                 }
             /* --- Category Section End Here --- */
+            
+            /* --- Tesimonial Slider --- */
+                .Testimonial-slider .prev-arrows, .Testimonial-slider .next-arrows{
+                    width: 50px; height: 50px;
+                }
+                .Testimonial-slider .prev-arrows{
+                    left: -25px;
+                }
+                .Testimonial-slider .next-arrows{
+                    right: -25px;
+                }
+            /* --- Testimonial Slider --- */
 
             /* --- Footer Section --- */
                 .News-letter input{
